@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style>
+            .section {
+                padding: 0.5rem 2rem 1rem 2rem;
+                }
+
+            .section:hover {
+                background-color: #ffffff;
+                transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+                }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <title>
+            SEARCH
+        </title>
+        <link href="/static/favicon.ico" rel="icon">
+    </head>
+    <body>
+        <div class="section">
+        <form action="/search" method="post">
+            <center><input class="form-control mx-auto w-auto" name="name" id="name" type="text" placeholder="NAME" autocomplete="off"></center>
+        </form></div>
+        <div class="section">
+        <form action="/">
+            <center><button class="btn btn-outline-primary" type="submit">HOME</button></center>
+        </form></div>
+    </body>
+</html>
