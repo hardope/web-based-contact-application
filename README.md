@@ -33,7 +33,7 @@ This route queries the database for all available contacts and displays it in th
 
 This route displays the new contact page if requested via GET, But on the other hand if requested via POST it collects all data(name, number and email) inputed by user and tries to input it into the database by running SQL queries but redirects to error page if any error is encountered.
 
-#### @app.route("/")
+#### @app.route("/delete")
 
 This route collects contact name that is inputed by the user and tries to delete it. If any error is encountered during this process, the error page is prompted to display the error details. 
 
@@ -57,4 +57,3 @@ This function takes three arguements(name, number, email) provided by user, then
 
 This function only takes name as arguement, checks the database to see if contact exists and then deletes it if it does.
 
- 
