@@ -58,8 +58,6 @@ def del_contact():
         pass
     name = request.form.get("name")
 
-    delete_contact(name)
-
     if not name:
         message = "You have to input a name."
         return render_template("error.html", message=message)
