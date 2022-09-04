@@ -2,16 +2,7 @@
 
 <html lang="en">
     <header>
-        <style>
-            .section {
-                padding: 0.5rem 2rem 1rem 2rem;
-                }
-
-            .section:hover {
-                background-color: #ffffff;
-                transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
-                }
-        </style>
+        <link href="/static/style.css" rel="stylesheet">
         <link href="/static/favicon.ico" rel="icon">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,24 +10,29 @@
         <title>
             NEW CONTACT
         </title>
-        
     </header>
     <body>
-        <center><header class="section" style="font-size: large;" style="text-align: center;">NEW CONTACT</header></center>
+        <center><h1 class="section">New Contact</h1></center>
         <form action="/new" method="post">
-            <center><div class="section">
-                <input class="form-control mx-auto w-auto" name="name" id="name" type="text" placeholder="Name" autocomplete="off" aria-autocomplete="none" autofocus>
+            <center>
+                <div class="section">
+                    <input class="form-control mx-auto w-auto" name="name" id="name" type="text" placeholder="Name" autocomplete="off" aria-autocomplete="none" autofocus>
+                </div>
+                <div class="section">
+                    <input class="form-control mx-auto w-auto" name="number" id="number" type="text" placeholder="Number" aria-autocomplete="none" autofocus>
+                </div>
+                <div class="section">
+                    <input class="form-control mx-auto w-auto" name="email" id="email" type="text" placeholder="E-mail" aria-autocomplete="none" autofocus>
+                </div>
+            </center>
+            <div class="section">
+                <center><button class="btn btn-outline-primary" type="submit">Create Contact</button></center>
             </div>
+        </form>
+        <form action="/">
             <div class="section">
-                <input class="form-control mx-auto w-auto" name="number" id="number" type="text" placeholder="Number" aria-autocomplete="none" autofocus>
+                <center><button class="btn btn-outline-primary" type="submit">HOME</button></center>
             </div>
-            <div class="section">
-                <input class="form-control mx-auto w-auto" name="email" id="email" type="text" placeholder="E-mail" aria-autocomplete="none" autofocus>
-            </div></center>
-            <div class="section">
-            <center><button class="btn btn-outline-primary" type="submit">Create Contact</button></center></div>
-
-
         </form>
     </body>
 </html>
