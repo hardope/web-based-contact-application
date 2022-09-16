@@ -1,12 +1,8 @@
 # web-based-contact-application
 
 ### Steps on installation
-* Download file
-* Unzip file
-* Save file to directory
-* Open command-line
 * make sure python is installed
-* install flask to pip
+* Run: 'pip install requirenents.txt'
 
 #### Description:
 This is a web based contact application that enables you to store, search, delete, list and create contacts.
